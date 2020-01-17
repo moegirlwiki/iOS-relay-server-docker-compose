@@ -1,0 +1,8 @@
+{
+	"version":"2.235",
+	"description":"fix sm2",
+	"css":["mw.css","main.170201.css","player-ui.min.170130-0517.css"],
+	"js":["jquery.js","main.js","player-bundled.min.170130-0517.js"],
+	"replaceFrom":["href=\"\/","https&#58;\/\/","http:\/\/","href=\"https:\/\/zh.moegirl.org\/index.php"],
+	"replaceTo":["href=\"moegirl:\/\/title\/","https:\/\/","https:\/\/","href=\"moegirl:\/\/title\/index.php"]
+}

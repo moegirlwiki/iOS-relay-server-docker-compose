@@ -1,0 +1,1007 @@
+/*
+ * vector界面定制
+ * 英文默认字体arial。为了避免乱码微软雅黑改写成unicode编码形式\5fae\8f6f\96c5\9ed1,Hiragino Sans GB是Mac OS雪豹以后系统自带的一款字体,微软正黑体Microsoft JhengHei是为了台湾用户设置的）
+ */
+body {
+    font-family: "PingHei", "Helvetica Neue", "Helvetica", "STHeitiSC-Light", "Arial", sans-serif;
+}
+
+
+div#mw-page-base {
+    background: none;
+    height: 100px;
+}
+#left-navigation, #right-navigation {
+    margin-top: 60px;
+}
+div#mw-panel {
+    top: 180px;
+    padding-top: 2em;
+    text-shadow: 3px 3px 6px #CCC;
+}
+div#mw-panel div.portal {
+    padding-bottom: 1em;
+}
+div#mw-head div.vectorMenu h4 {
+    height: 1.9em;
+    margin-bottom: 0;
+    padding-top: 1.25em;
+    padding-bottom: 0;
+    padding-right: .5em;
+}
+
+#p-variants-label, div.vectorTabs, div.vectorTabs span, div.vectorTabs ul, div#mw-head div.vectorMenu h3 {
+    background-image: none;
+}
+
+
+/* 右上个人链接栏 */
+div#p-personal {
+    background-color: rgba(255,255,255,0.7);
+    padding: 5px 10px 5px 0px;
+    box-shadow: #666 0 1px 5px;
+}
+/* MW自带10em宽度，应该是留给测试链接的吧萌百没有就去掉 */
+#p-personal ul {
+    padding-left: 0;
+}
+/* 对齐搜索按钮 */
+div#simpleSearch button#searchButton {
+    padding-top: .1em;
+    padding-bottom: .2em;
+    padding-right: .1em;
+}
+/* 2012年12月24日空想之梦做出的首页样式 */
+#mainpage {
+    display: block;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto; /* 居中 */
+    max-width: 1030px;
+}
+.mainpage-newsbox {
+    width: 66.67%;
+    float: left;
+}
+.mainpage-box {
+    float: left;
+    width: 33.33%;
+}
+.mainpage-title {
+    font-family: "PingHei", "Helvetica Neue", "Helvetica", "STHeitiSC-Light", "Arial", sans-serif;
+    font-size: 1.618em;
+    color: #228b22;
+    margin: 0;
+    background: #deede0;
+    font-weight: 400; /* 400 = normal */
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size-adjust: .43;
+}
+.mainpage-content,
+.mainpage-1stcontent {
+    vertical-align: top;
+    padding: .5em 2%;
+    min-height: 230px;
+}
+.mainpage-content.nomobile {
+    min-height: auto;
+}
+.clear-div {
+    clear: both;
+}
+
+/* 并列用的CSS3代码 */
+.block, .content-box {
+    width: 100%;
+}
+.content-box {
+    display: box;
+    display: -moz-box;
+    display: -webkit-box;
+}
+.parallel .content-box {
+    box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+}
+.parallel .boite {
+    box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+}
+
+/* 标题下划线增强 700 = bold */
+h1 {
+    font-weight: 700;
+    border-bottom: 2px solid #0074f9;
+}
+h2 {
+    font-weight: 700;
+    border-bottom: 1px solid #0074f9;
+}
+
+/* 副标题 */
+#siteSub {
+    display: inline;
+    font-size: 90%;
+    font-weight: 400; /* 400 = normal */
+    font-style: normal;
+    text-align: right;
+}
+
+/* 被点过的外部链接不变色 */
+div#content a.external:visited {
+    color: #36b;
+}
+
+/* 斜体字右边距加大看以防止文字挤在一起 */
+#mw-content-text i {
+    margin-right: 3px;
+}
+
+
+/* 通用圆角框 */
+.common-box {
+    padding: .2em .4em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-box-shadow: #666 0 2px 3px;
+    -moz-box-shadow: #666 0 2px 3px;
+    box-shadow: #666 0 2px 3px;
+}
+/* info类模板 */
+.infoBox {
+    margin: 0 auto;
+}
+.infoBoxTitle {
+    margin: 3px auto;
+    padding: 0;
+    text-align: center;
+    font-weight: 700;
+}
+.infoBoxIcon {
+    display: table-cell;
+    padding: 2px 0 2px .5em;
+    vertical-align: middle;
+}
+.infoBoxText {
+    display: table-cell;
+    padding: .25em .5em .25em 1.3em;
+    width: 100%;
+    vertical-align: middle;
+}
+.infoBoxContent {
+    border: 1px solid #ddd;
+    border-left-width: 0;
+    background: #fbfbfb;
+}
+.infoBoxBelow {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+/* 数据表格宽度 */
+.mw-datatable.TablePager {
+    width:100%;
+}
+/* 隐藏首页标题，空行，讨论、查看源代码tab */
+.page-Mainpage h1.firstHeading,
+.page-Mainpage #siteSub,
+.page-Mainpage #contentSub,
+.page-Mainpage li#ca-viewsource,
+.page-Mainpage li#ca-talk {
+    display: none;
+}
+
+/* 桌面版黑幕模板配合CSS */
+.heimu,
+.heimu a,
+a .heimu,
+.heimu a.new {
+    background-color: #252525 ;
+    color: #252525 ;
+}
+
+/* 名字空间改变背景色 */
+.ns-0 div#content,
+.ns-0 div#p-cactions li a:hover,
+.ns-0 div#p-cactions li.selected a,
+.ns-0 div#content div.thumb {
+    background-color: #f9f9f9;
+}
+div#content,
+div#p-cactions li a:hover,
+div#p-cactions li.selected a,
+div#content div.thumb {
+    background-color: #F8FCFF;
+}
+/* 回到顶部 */
+.backToTop {
+    display: none;
+    width: 20px;
+    padding: 5px 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    position: fixed;
+    _position: absolute;
+    right: 0;
+    bottom: 100px;
+    _bottom: "auto";
+    cursor: pointer;
+    opacity: .6;
+    filter: Alpha(opacity=60);
+}
+/* 人物信息模板的css */
+.infotemplatebox {
+    float: right;
+    width: 250px;
+    font-size: 90%;
+    margin: 1em 0 1em 1em;
+    background: #f9f9f9;
+    border: 1px #999 solid;
+    border-collapse: collapse;
+    word-break: break-all;
+    clear: right;
+}
+/* 侧边栏logo或左下角图片添加 */
+#sidebar-character {
+    position: fixed;
+    bottom: 0;
+    left: -3px;
+    z-index: -2;
+}
+#wglogo {
+    display: none;
+}
+@media screen and (max-width: 600px) { /* 低像素设备隐藏 */
+    #sidebar-character {
+        display: none;
+    }
+}
+/* 编辑区样式 */
+.my-buttons {
+    padding: .5em;
+}
+.my-buttons a {
+    text-decoration: none;
+    border: 1px #069 outset;
+    padding: .1em;
+}
+.my-buttons a:hover,
+.my-buttons a:active {
+    border-style: inset;
+}
+/* 解决pre不换行的问题 */
+pre {
+    white-space: pre-wrap; /* CSS-3 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+/* 页面底部导航框（2011年8月16日引自中文维基）(所谓大家族模板) */
+table.navbox {
+    border: 1px solid #aaa;
+    clear: both;
+    margin: auto;
+    padding: 1px;
+    text-align: center;
+    width: 100%;
+}
+table.navbox+table.navbox {
+    margin-top: -1px;
+}
+.navbox-title, .navbox-abovebelow, table.navbox th {
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+.navbox-group {
+    font-weight: 700;
+    padding-left: 1em;
+    padding-right: 1em;
+    white-space: nowrap;
+}
+.navbox, .navbox-subgroup {
+    background: none repeat scroll 0 0 #fdfdfd;
+}
+.navbox-list {
+    border-color: #fdfdfd;
+}
+.navbox-title, table.navbox th {
+    background: none repeat scroll 0 0 #a5e4a5;
+}
+.navbox-abovebelow, .navbox-group, .navbox-subgroup .navbox-title {
+    background: none repeat scroll 0 0 #c0ecc0;
+}
+.navbox-subgroup .navbox-group, .navbox-subgroup .navbox-abovebelow {
+    background: none repeat scroll 0 0 #e6f6e6;
+}
+.navbox-even {
+    background: none repeat scroll 0 0 #f5fcf5;
+}
+.navbox-odd {
+    background: none repeat scroll 0 0 transparent;
+}
+.collapseButton {
+    float: right;
+    font-weight: 400;
+    text-align: right;
+    width: auto;
+}
+.navbox .collapseButton {
+    width: 6em;
+}
+/*
+ * METABOX样式代码开始
+ * 代码引自加泰隆尼亞語维基，增加了一個樣式，部分內容本地化
+ * 以下僅為設計樣式部分，需要連同MediaWiki:Common.js才會生效
+ * 在移動版支援顯示，iso客戶端不支援顯示，需要改進內容
+ */
+/* purple(默认) 1:7050a0 2:9070c0 3:b090e0 4:d0b0ff 5:f0d0ff 6:f0edf5 */
+.mcBoto {
+    background-color: #d0b0ff; /* 4 */
+    border: .15em solid #000000;
+    border-color: #f0d0ff #b090e0 #9070c0 #f0d0ff; /* 5 3 3 5 */
+    cursor: pointer;
+    display: inline;
+    margin-right: .1em;
+    padding: .2em .3em .2em .3em;
+    position: relative;
+}
+.mcBoto a,
+.mcBoto strong {
+    background: none !important;
+    color: #7050a0 !important; /* 1 */
+    font-size: 90%;
+    font-weight: 700;
+    padding: 0 !important;
+    text-decoration: none !important;
+}
+.mcBoto a:hover,
+.mcBoto strong:hover {
+    color: #000 !important;
+    text-decoration: underline !important;
+}
+.mcBotoSel {
+    background-color: #9070c0; /* 2 */
+    border: .15em solid #000000;
+    border-color: #b090e0 #7050a0 #9070c0 #b090e0; /* 3 1 2 3 */
+    cursor: default;
+    display: inline;
+    margin-right: .1em;
+    padding: .2em .3em .2em .3em;
+    position: relative;
+    color: #fff;
+}
+.mcBotoSel a {
+    background: none !important;
+    color: white !important;
+    cursor: default;
+    font-size: 90%;
+    font-weight: 700;
+    padding: 0 !important;
+    text-decoration: none !important;
+}
+.mcContingut {
+    background-color: #f0edf5; /* 6 */
+    border: .2em solid #9070c0; /* 2 */
+    border-color: #9070c0 #7050a0 #7050a0 #9070c0; /* 2 1 1 2 */
+    padding: 1em;
+    position: static; /* Si hi posem relative falla amb MSIE */
+}
+.mcPestanya {
+    background-color: #f0edf5; /* 6 */
+    border-color: #7050a0 #b090e0 #b090e0 #7050a0; /* 1 3 3 1 */
+    width: 100%;
+}
+/* green 1:60b030 2:75c045 3:90d060 4:a5e085 5:c0f090 */
+.mcgreen .mcBoto {
+    background-color: #a5e085; /* 4 */
+    border-color: #c0f090 #90d060 #75c045 #c0f090; /* 5 3 2 5 */
+}
+.mcgreen .mcBoto a,
+.mcgreen .mcBoto strong {
+    color: #60b030 !important; /* 1 */
+    font-size: 90%
+}
+.mcgreen .mcBoto a:hover,
+.mcgreen .mcBoto strong:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+.mcgreen .mcBotoSel {
+    background-color: #75c045; /* 2 */
+    border-color: #90d060 #60b030 #75c045 #90d060; /* 3 1 2 3 */
+}
+.mcgreen .mcContingut {
+    background-color: #f5fffa;
+    border-color: #75c045 #60b030 #60b030 #75c045; /* 2 1 1 2 */
+}
+.mcgreen .mcPestanya {
+    background-color: #f5fffa;
+    border-color: #60b030 #90d060 #90d060 #60b030; /* 1 3 3 1 */
+}
+/* red 1:CC0000 2:FF0000 3:FF8888 4:FFAAAA 5:FFCCCC */
+.mcred .mcBoto {
+    background-color: #FFAAAA; /* 4 */
+    border-color: #FFCCCC #FF8888 #FF0000 #FFCCCC; /* 5 3 2 5 */
+}
+.mcred .mcBoto a,
+.mcred .mcBoto strong {
+    color: #CC0000 !important; /* 1 */
+    font-size: 90%
+}
+.mcred .mcBoto a:hover .mcred .mcBoto strong:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+.mcred .mcBotoSel {
+    background-color: #FF0000; /* 2 */
+    border-color: #FF8888 #CC0000 #FF0000 #FF8888; /* 3 1 2 3 */
+}
+.mcred .mcContingut {
+    background-color: #fffafa;
+    border-color: #FF0000 #CC0000 #CC0000 #FF0000; /* 2 1 1 2 */
+}
+.mcred .mcPestanya {
+    background-color: #fffafa;
+    border-color: #CC0000 #FF0000 #FF0000 #CC0000; /* 1 3 3 1 */
+}
+/* blue 1:3379de 2:5b8dd6 3:88abde 4:a7c1e6 5:c8d6e9 */
+.mcblue .mcBoto {
+    background-color: #a7c1e6; /* 4 */
+    border-color: #c8d6e9 #88abde #5b8dd6 #c8d6e9; /* 5 3 2 5 */
+}
+.mcblue .mcBoto a,
+.mcblue .mcBoto strong {
+    color: #3379de !important; /* 1 */
+    font-size: 90%
+}
+.mcblue .mcBoto a:hover .mcblue .mcBoto strong:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+.mcblue .mcBotoSel {
+    background-color: #5b8dd6; /* 2 */
+    border-color: #88abde #3379de #5b8dd6 #88abde; /* 3 1 2 3 */
+}
+.mcblue .mcContingut {
+    background-color: #f0f8ff;
+    border-color: #5b8dd6 #3379de #3379de #5b8dd6; /* 2 1 1 2 */
+}
+.mcblue .mcPestanya {
+    background-color: #f0f8ff;
+    border-color: #3379de #88abde #88abde #3379de; /* 1 3 3 1 */
+}
+/* yellow 1:ffd813 2:ffe147 3:ffe977 4:fff1a4 5:fef4bc */
+.mcyellow .mcBoto {
+    background-color: #fff1a4; /* 4 */
+    border-color: #fef4bc #ffe977 #ffe147 #fef4bc; /* 5 3 2 5 */
+}
+.mcyellow .mcBoto a,
+.mcyellow .mcBoto strong {
+    color: #ffd813 !important; /* 1 */
+    font-size: 90%
+}
+.mcyellow .mcBoto a:hover .mcyellow .mcBoto strong:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+.mcyellow .mcBotoSel {
+    background-color: #ffe147; /* 2 */
+    border-color: #ffe977 #ffd813 #ffe147 #ffe977; /* 3 1 2 3 */
+}
+.mcyellow .mcContingut {
+    background-color: #fffce8;
+    border-color: #ffe147 #ffd813 #ffd813 #ffe147; /* 2 1 1 2 */
+}
+.mcyellow .mcPestanya {
+    background-color: #fffce8;
+    border-color: #ffd813 #88abde #88abde #ffd813; /* 1 3 3 1 */
+}
+/* orange 1:ff820e 2:ff9d42 3:ffac5d 4:ffbd7f 5:ffd0a4 6:ffeedd */
+.mcorange .mcBoto {
+    background-color: #ffbd7f; /* 4 */
+    border-color: #ffd0a4 #ffac5d #ff9d42 #ffd0a4; /* 5 3 2 5 */
+}
+.mcorange .mcBoto a,
+.mcorange .mcBoto strong {
+    color: #ff820e !important; /* 1 */
+    font-size: 90%
+}
+.mcorange .mcBoto a:hover .mcorange .mcBoto strong:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+.mcorange .mcBotoSel {
+    background-color: #ff9d42; /* 2 */
+    border-color: #ffac5d #ff820e #ff9d42 #ffac5d; /* 3 1 2 3 */
+}
+.mcorange .mcContingut {
+    background-color: #ffeedd; /* 6 */
+    border-color: #ff9d42 #ff820e #ff820e #ff9d42; /* 2 1 1 2 */
+}
+.mcorange .mcPestanya {
+    background-color: #ffeedd; /* 6 */
+    border-color: #ff820e #ffac5d #ffac5d #ff820e; /* 1 3 3 1 */
+}
+/* black 1:4c4c4c 2:7f7f7f 3:999999 4:b2b2b2 5:cccccc 6:e5e5e5 */
+.mcblack .mcBoto {
+    background-color: #b2b2b2; /* 4 */
+    border-color: #cccccc #999999 #7f7f7f #cccccc; /* 5 3 2 5 */
+}
+.mcblack .mcBoto a,
+.mcblack .mcBoto strong {
+    color: #4c4c4c !important; /* 1 */
+    font-size: 90%
+}
+.mcblack .mcBoto a:hover .mcblack .mcBoto strong:hover {
+    color: black !important;
+    text-decoration: underline;
+}
+.mcblack .mcBotoSel {
+    background-color: #7f7f7f; /* 2 */
+    border-color: #999999 #4c4c4c #7f7f7f #999999; /* 3 1 2 3 */
+}
+.mcblack .mcContingut {
+    background-color: #e5e5e5; /* 6 */
+    border-color: #7f7f7f #4c4c4c #4c4c4c #7f7f7f; /* 2 1 1 2 */
+}
+.mcblack .mcPestanya {
+    background-color: #e5e5e5; /* 6 */
+    border-color: #4c4c4c #999999 #999999 #4c4c4c; /* 1 3 3 1 */
+}
+/* METABOX样式代码结束 */
+/* 隐藏只供管理员查看的内容 */
+.sysop-show,
+.accountcreator-show {
+    display: none;
+}
+/* wikitable green */
+table.wikitable-green {
+    background: #c9f6e1
+}
+.wikitable-green th {
+    background: #13ec93
+}
+.wikitable-green td {
+    background: #f3f3f3
+}
+/*
+ * Skeleton V2.0.4
+ * Copyright 2014, Dave Gamache
+ * www.getskeleton.com
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 12/29/2014
+ */
+/* 以下内容已被萌百格式化，注释已被翻译 */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.div,
+.divs,
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+/* 适用于屏幕像素宽度大于400px的设备 */
+@media (min-width: 400px) {
+    .container {
+        width: 85%;
+        padding: 0;
+    }
+}
+/* 适用于屏幕像素宽度大于550px的设备 */
+@media (min-width: 550px) {
+    .container {
+        width: 80%;
+    }
+    .div,
+    .divs,
+    .column,
+    .columns {
+        margin-left: .3%;
+    }
+    .div:first-child,
+    .divs:first-child,
+    .column:first-child,
+    .columns:first-child {
+        margin-left: 0;
+    }
+    .one.div,
+    .one.divs {
+        width: 100%;
+        margin-left: 0;
+    }
+    .two.divs {
+        width: 49.85%;
+    }
+    .three.divs {
+        width: 33.1333333333%;
+    }
+    .four.divs {
+        width: 24.775%;
+    }
+    .five.divs {
+        width: 19.76%;
+    }
+    .six.divs {
+        width: 16.4166666667%;
+    }
+    .seven.divs {
+        width: 14.0285714286%;
+    }
+    .eight.divs {
+        width: 12.2375%;
+    }
+    .nine.divs {
+        width: 10.8444444444%;
+    }
+    .ten.divs {
+        width: 9.73%;
+    }
+    .eleven.divs {
+        width: 8.81818181818%;
+    }
+    .twelve.divs {
+        width: 8.05833333333%;
+    }
+    .one.column,
+    .one.columns {
+        width: 8.05833333333%;
+    }
+    .two.columns {
+        width: 16.4166666667%;
+    }
+    .three.columns {
+        width: 24.775%;
+    }
+    .four.columns {
+        width: 33.1333333333%;
+    }
+    .five.columns {
+        width: 41.4916666667%;
+    }
+    .six.columns {
+        width: 49.85%;
+    }
+    .seven.columns {
+        width: 58.2083333333%;
+    }
+    .eight.columns {
+        width: 66.5666666667%;
+    }
+    .nine.columns {
+        width: 74.925%;
+    }
+    .ten.columns {
+        width: 83.2833333333%;
+    }
+    .eleven.columns {
+        width: 91.6416666667%;
+    }
+    .twelve.columns {
+        width: 100%;
+        margin-left: 0;
+    }
+    .one-third.column {
+        width: 33.1333333333%;
+    }
+    .two-thirds.column {
+        width: 66.5666666667%;
+    }
+    .one-half.column {
+        width: 49.85%;
+    }
+}
+
+
+/*针对iOS的设计*/
+
+/*NavBox修正*/
+.moegirl-flatten-navbox-wrapper {
+    position: relative;
+    margin-top: 10px;
+    line-height: 1.7;
+    border: 1px solid #aaa;
+    padding: 3px;
+    clear: both;
+    -webkit-tap-highlight-color: transparent
+}
+.moegirl-flatten-navbox-subgroup {
+    border: 0 solid #e6f6e6;
+    border-left-width: 3px
+}
+.moegirl-flatten-navbox-title {
+    font-weight: 700;
+    background: #e6f6e6;
+    margin-bottom: 2px;
+    padding-left: 1em
+}
+.moegirl-flatten-navbox-nav {
+    font-size: 80%;
+    word-spacing: .8em;
+    border-top: 1px solid #aaa
+}
+.moegirl-flatten-navbox-content {
+    padding-left: 1em;
+    margin-bottom: 2px
+}
+.moegirl-flatten-navbox-content:last-child {
+    margin-bottom: 0
+}
+.moegirl-flatten-navbox-wrapper>.moegirl-flatten-navbox-subgroup {
+    border-color: #a5e4a5;
+    border-width: 0 3px 3px
+}
+.moegirl-flatten-navbox-wrapper>.moegirl-flatten-navbox-subgroup>.moegirl-flatten-navbox-title {
+    background: #a5e4a5
+}
+.moegirl-flatten-navbox-wrapper>.moegirl-flatten-navbox-subgroup>.moegirl-flatten-navbox-content>.moegirl-flatten-navbox-subgroup {
+    border-color: #c0ecc0
+}
+.moegirl-flatten-navbox-wrapper>.moegirl-flatten-navbox-subgroup>.moegirl-flatten-navbox-content>.moegirl-flatten-navbox-subgroup>.moegirl-flatten-navbox-title {
+    background: #c0ecc0
+}
+.moegirl-flatten-navbox-collapsible>.moegirl-flatten-navbox-title {
+    position: relative
+}
+.moegirl-flatten-navbox-collapsible>.moegirl-flatten-navbox-content {
+    display: none
+}
+.moegirl-flatten-navbox-open>.moegirl-flatten-navbox-content {
+    display: block
+}
+.moegirl-flatten-navbox-collapsible>.moegirl-flatten-navbox-title {
+    padding-left: 3em;
+    margin-bottom: 0;
+    min-height: 20px
+}
+.moegirl-flatten-navbox-open>.moegirl-flatten-navbox-title {
+    margin-bottom: 2px
+}
+.moegirl-flatten-navbox-toggle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    font-family: monospace;
+    color: #079b2b;
+    font-size: 110%;
+    width: 3.5em
+}
+.moegirl-flatten-navbox-toggle>span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%)
+}
+.moegirl-flatten-navbox-collapsible>.moegirl-flatten-navbox-title>.moegirl-flatten-navbox-toggle>.moegirl-flatten-navbox-status-open {
+    display: none
+}
+.moegirl-flatten-navbox-collapsible>.moegirl-flatten-navbox-title>.moegirl-flatten-navbox-toggle>.moegirl-flatten-navbox-status-close,
+.moegirl-flatten-navbox-open>.moegirl-flatten-navbox-title>.moegirl-flatten-navbox-toggle>.moegirl-flatten-navbox-status-open {
+    display: inline
+}
+.moegirl-flatten-navbox-open>.moegirl-flatten-navbox-title>.moegirl-flatten-navbox-toggle>.moegirl-flatten-navbox-status-close {
+    display: none
+}
+
+/*普通补充*/
+
+body{
+    -webkit-text-size-adjust: none;
+    padding:10px !important;
+    overflow-x:hidden !important;
+}
+
+p{
+    clear:both !important;
+}
+
+#mw-content-text{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.wikitable, table.navbox{
+    display:block;
+    /*overflow-y:scroll;*/
+}
+
+.classicalcharacter-banner{
+    background-color: #ffffff !important;
+    margin: 0 0 10px 0 !important;
+    max-width: 100% !important;
+    width: 98% !important;
+    border-radius: 4px;
+    padding: 0 !important;
+    font-size: 80%;
+}
+
+table.wikitable {
+    border: none !important;
+    clear: both;
+}
+
+.navbox-title span {
+    font-size: 10px !important;
+}
+.backToTop {
+    display: none !important;
+}
+.mw-search-pager-bottom,
+fieldset.rcoptions {
+    display: none;
+}
+.searchresult {
+    font-size: 10px !important;
+    line-height: 13px;
+    width: 100% !important;
+}
+form {
+    display: none;
+}
+iframe {
+    width: 292px !important;
+    height: auto;
+}
+#mw-pages .mw-content-ltr td,
+#mw-subcategories .mw-content-ltr td {
+    float: left;
+    display: block;
+    clear: both;
+    width: 90% !important;
+}
+h2 {
+    clear: both;
+}
+#catlinks.catlinks {
+    margin-bottom: 30px;
+    float: left;
+}
+#mw-content-text table {
+    white-space: normal !important;
+}
+
+.classicalcharacter-banner td
+{
+    padding: 0 1px!important;
+}
+
+.ds-thread, .ds-narrow{
+    display: none;
+}
+
+[id^="ajaxpoll-container-"], .bilibili-video-container{
+    display: none;
+}
+
+div.infoBox{
+    width: auto !important;
+}
+
+.infoBoxContent{
+    border:solid #afafaf;
+    background-color: white;
+    padding: 5px;
+    border-width: .5px .5px .5px 0;
+    font-size: xx-small;
+}
+
+.infoBox{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#cache-id{
+    font-size: 9px;
+    margin-top: 20px;
+}
+
+.mw-body{
+    padding-bottom: 60px;
+}
+
+/*R18 并没有*/
+.x18-page-warning{
+    display:none !important;
+}
+
+#x18{
+    display:none !important;
+}
+
+/*Kan Collect*/
+center.kancolle-nav
+{
+    font-size: 70%;
+}
+
+.kancolle-nav td
+{
+    float:left;
+    width: 180px !important;
+    margin-top: 20px;
+    font-size: 90%;
+}
+
+.kancolle-nav-title
+{
+    font-size:110% !important;
+}
+
+audio{
+    min-width: 80px !important;
+}
+
+/*图片附件页面信息*/
+.fullImageLink a img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.mw-collapsible.wikitable{
+    background-color: rgba(0, 255, 0, 0.15);
+}
+
+.mw-collapsible.wikitable tbody{
+    background-color: white;
+}
+
+.wikitable-green{
+    width: 100% !important;
+}
+
+.infoBox{
+    clear: both;
+}
+
+.thumbinner{
+    width: auto !important;
+}
+
+.tracklist{
+    margin: 0 !important;
+}
+
+#ios-title{
+    display: none;
+}
+/*Love Live*/
+.wikitable.slf-table{
+    width: 100% !important;
+}
+
+/*皇牌机娘*/
+.av-data{
+    width: 100%;
+}
+
+.remove-in-ios-app{
+    display: none !important;
+}

@@ -1,0 +1,26 @@
+{
+	"version":"5.7",
+	"description":"update with 5.7",
+	"css":[
+		"mw.css",
+		"main.css",
+		"player-ui.min.css"
+	],
+	"js":[
+		"jquery.js",
+		"main.js",
+		"player-bundled.min.js"
+	],
+	"replaceFrom":[
+		"href=\"/",
+		"https&#58;//",
+		"http://",
+		"href=\"https://zh.moegirl.org/index.php"
+	],
+	"replaceTo":[
+		"href=\"moegirl://title/",
+		"https://",
+		"https://",
+		"href=\"moegirl://title/index.php"
+	]
+}
