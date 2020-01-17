@@ -23,5 +23,8 @@ PROXY_ADDRESS=127.0.0.1:8085
 
 Configure `nginx.conf` file, and link to the actual nginx running on the host machine
 
-
+* **Deploy**:
 `docker-compose pull && docker-compose up -d`
+* **Update**:
+`docker-compose down && docker-compose pull && docker-compose up -d`
+
