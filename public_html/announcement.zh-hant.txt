@@ -1,0 +1,3 @@
+下一個版本即將推出！將由SwiftUI重構，請備份草稿箱內容，以免丟失！
+
+iOS Relay Server. Powered by mc256.

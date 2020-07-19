@@ -1,8 +1,8 @@
 {
-	"version":"2.235",
-	"description":"fix sm2",
+	"version":"2.24",
+	"description":"fix sm2 cn",
 	"css":["mw.css","main.170201.css","player-ui.min.170130-0517.css"],
 	"js":["jquery.js","main.js","player-bundled.min.170130-0517.js"],
-	"replaceFrom":["href=\"\/","https&#58;\/\/","http:\/\/","href=\"https:\/\/zh.moegirl.org\/index.php"],
-	"replaceTo":["href=\"moegirl:\/\/title\/","https:\/\/","https:\/\/","href=\"moegirl:\/\/title\/index.php"]
+	"replaceFrom":["href=\"\/","https&#58;\/\/","http:\/\/","href=\"https:\/\/zh.moegirl.org.cn\/index.php", "href=\"https:\/\/zh.moegirl.org\/index.php"],
+	"replaceTo":["href=\"moegirl:\/\/title\/","https:\/\/","https:\/\/","href=\"moegirl:\/\/title\/index.php", "href=\"moegirl:\/\/title\/index.php"]
 }

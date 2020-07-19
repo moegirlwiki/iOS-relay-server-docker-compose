@@ -1,10 +1,10 @@
 {
-	"web":"https:\/\/zh.moegirl.org",
+	"web":"https:\/\/zh.moegirl.org.cn",
 	"api":"https:\/\/misaka.yuri.moe\/pass",
 	"index":"https:\/\/misaka.yuri.moe\/webproxy.php",
 	"opensearch":"https:\/\/misaka.yuri.moe\/webproxy.php",
-	"register":"https:\/\/m.moegirl.org\/index.php?title=Special:%E5%88%9B%E5%BB%BA%E8%B4%A6%E6%88%B7&returnto=User:Maverick\/RegisterSuccess",
+	"register":"https:\/\/m.moegirl.org.cn\/index.php?title=Special:%E5%88%9B%E5%BB%BA%E8%B4%A6%E6%88%B7&returnto=User:Maverick\/RegisterSuccess",
 	"avatar-set":"https:\/\/misaka.yuri.moe\/avatar-set",
-	"avatar-get":"https:\/\/commons.moegirl.org\/extensions\/Avatar\/avatar.php",
+	"avatar-get":"https:\/\/commons.moegirl.org.cn\/extensions\/Avatar\/avatar.php",
 	"login-return":"https:\/\/misakagw.moegirlpedia.moetransit.com\/auth.php"
 }

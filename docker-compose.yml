@@ -17,6 +17,9 @@ services:
       - ./public_html:/usr/src/app/main
     ports:
       - ${PROXY_ADDRESS}:8888
+    depends_on:
+      - db
+    restart: always
   pma:
     image: phpmyadmin/phpmyadmin
     environment:
@@ -28,6 +31,9 @@ services:
       - ${PMA_ADDRESS}:80
     links:
       - db:db
+    depends_on:
+      - db
+    restart: always
   db:
     image: mysql:latest
     ports:
@@ -47,6 +53,6 @@ services:
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
       MYSQL_USER: "${MYSQL_USER}"
       MYSQL_PASSWORD: "${MYSQL_PASSWORD}"
-
+    restart: always
 
 

@@ -1,6 +1,6 @@
 {
-	"version":"5.7",
-	"description":"update with 5.7",
+	"version":"5.8",
+	"description":"update with 5.8 CN",
 	"css":[
 		"mw.css",
 		"main.css",
@@ -15,12 +15,14 @@
 		"href=\"/",
 		"https&#58;//",
 		"http://",
+		"href=\"https://zh.moegirl.org.cn/index.php",
 		"href=\"https://zh.moegirl.org/index.php"
 	],
 	"replaceTo":[
 		"href=\"moegirl://title/",
 		"https://",
 		"https://",
-		"href=\"moegirl://title/index.php"
+		"href=\"moegirl://title/index.php",
+		"href=\"moegirl://title/index.php""
 	]
 }
